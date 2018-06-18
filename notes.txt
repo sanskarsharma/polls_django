@@ -1,0 +1,22 @@
+
+Django topics :
+function views vs class based views
+django session framework
+django with #PostgreSQL
+generic views in django
+
+# Database setup :
+ -> in settings.py -> DATABASES{} -> specify 'ENGINE' and 'OPTIONS' field. OPTIONS is dict.
+ -> make a database.cnf file, give its path in OPTIONS['read_default_file'] field.
+
+
+ # Database -making migrations and applying them to the DB.
+ commands :
+ -> python manage.py makemigrations <migration_name>
+ -> python manage.py sqlmigrate <migration_name> <number>
+ -> python manage.py check
+ -> python manage.py migrate 
+
+ # manage.py commands
+ - python manage.py createsuperuser  // for creating django admin user
+ - python manage.py shell            // opening python interactive shell
